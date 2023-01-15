@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black_shade"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/black_shade">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:src="@drawable/logo"
+                android:padding="5dp"
+                android:layout_marginEnd="15dp"
+                android:gravity="center">
+            </ImageView>
+        </RelativeLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tab_bar"
+        android:layout_below="@id/toolbar"
+        app:tabTextColor="@color/white"
+        app:tabIndicatorColor="@color/white"
+        app:tabIndicatorHeight="3.5dp"
+        app:tabMode="scrollable"
+        android:layout_marginTop="0dp"
+        android:backgroundTint="@color/yellow"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/home"
+            android:text="@string/Home_Tab"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </com.google.android.material.tabs.TabItem>
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/sports"
+            android:text="@string/Sports_Tab"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </com.google.android.material.tabs.TabItem>
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/health"
+            android:text="@string/Health_Tab"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </com.google.android.material.tabs.TabItem>
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/food"
+            android:text="@string/Food_Tab"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </com.google.android.material.tabs.TabItem>
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/politics"
+            android:text="@string/Politics_Tab"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </com.google.android.material.tabs.TabItem>
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/environment"
+            android:text="@string/Environment_Tab"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </com.google.android.material.tabs.TabItem>
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/technology"
+            android:text="@string/Technology_Tab"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </com.google.android.material.tabs.TabItem>
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/science"
+            android:text="@string/Science_Tab"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </com.google.android.material.tabs.TabItem>
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/entertainment"
+            android:text="@string/Entertainment_Tab"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </com.google.android.material.tabs.TabItem>
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/business"
+            android:text="@string/Business_Tab"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </com.google.android.material.tabs.TabItem>
+    </com.google.android.material.tabs.TabLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/fragment_container"
+        android:layout_below="@id/tab_bar"
+        android:layout_marginTop="0dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </androidx.viewpager.widget.ViewPager>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/search_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="25dp"
+        android:backgroundTint="@color/yellow"
+        app:tint="@color/white"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        app:srcCompat="@drawable/ic_baseline_search_24" />
+</RelativeLayout>

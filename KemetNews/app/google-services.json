@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "79534855373",
+    "project_id": "pushnotificatation",
+    "storage_bucket": "pushnotificatation.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:79534855373:android:72526be80a0fcc1b57c584",
+        "android_client_info": {
+          "package_name": "com.example.kemetnews"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "79534855373-3c6p3vobdodb12rnea0a8e8qn01csdjg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDoPUl-ycKHj41z8ZCX3gf45JFelxPycu4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "79534855373-3c6p3vobdodb12rnea0a8e8qn01csdjg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
